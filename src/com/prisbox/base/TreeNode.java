@@ -1,14 +1,17 @@
 /**
  * 
  */
-package com.prisbox.one;
+package com.prisbox.base;
 
 /**
  * @author LO
  *
  */
-public class Base {
-
+public class TreeNode {
+	public int val;
+	public TreeNode left;
+	public TreeNode right;
+	TreeNode(int x) { val = x; }
 	/**
 	 * @param args
 	 */
