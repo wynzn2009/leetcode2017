@@ -33,7 +33,7 @@ public class NthDigit {
         			return 0;
         		}else{
         			
-        			return s.charAt(t)-'0';
+        			return Character.getNumericValue(s.charAt(t));
         		}
         	}
         }
