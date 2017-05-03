@@ -15,6 +15,22 @@ public class MinimumMovesToEqualArrayElementsII {
         	return 0;
         }
         Arrays.sort(nums);
+        int index = 0;
+        int mid = (nums.length-1)/2;
+        int length = nums.length;
+        int sum = 0;
+        while(index<=mid){
+        	sum += nums[length-index-1]-nums[index];
+        	index++;
+        }
+		return sum;
+    }
+	
+	public int minMoves21(int[] nums) {
+        if(nums.length==1){
+        	return 0;
+        }
+        Arrays.sort(nums);
 		int mid = nums[(nums.length-1)/2];
 		int sum = 0;
 		for(int t : nums){
