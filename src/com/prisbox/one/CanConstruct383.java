@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.prisbox;
+package com.prisbox.one;
 
 /**
  * @author admin
