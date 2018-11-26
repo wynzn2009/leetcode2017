@@ -22,7 +22,24 @@ package com.prisbox.one;
  *
  */
 public class TeemoAttacking495 {
-	public int findPoisonedDuration(int[] timeSeries, int duration) {
+	public static int findPoisonedDuration(int[] timeSeries, int duration) {
+		int t = 0;
+		int sum = 0;
+		for (int i = 0; i < timeSeries.length; i++) {
+			if (timeSeries[i] > t) {
+				sum += duration;
+				t = timeSeries[i] + duration;
+			} else {
+				sum += timeSeries[i] + duration - t;
+				t = timeSeries[i] + duration;
+			}
+		}
+		return sum;
+	}
 
+	public static void main(String[] args) {
+		int[] timeSeries = { 1, 2 };
+		int duration = 2;
+		System.out.println(TeemoAttacking495.findPoisonedDuration(timeSeries, duration));
 	}
 }
