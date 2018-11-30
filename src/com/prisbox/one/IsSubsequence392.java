@@ -28,7 +28,23 @@ package com.prisbox.one;
  */
 public class IsSubsequence392 {
 	public boolean isSubsequence(String s, String t) {
-
+		if("".equals(s)) {
+			return true;
+		}
+		int i = 0;
+		int j = 0;
+		char a = s.charAt(i);
+		for (; j < t.length(); j++) {
+			if (a == t.charAt(j)) {
+				i++;
+				if (i == s.length()) {
+					return true;
+				} else {
+					a = s.charAt(i);
+				}
+			}
+		}
+		return false;
 	}
 
 	/**
