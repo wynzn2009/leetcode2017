@@ -12,7 +12,7 @@ package com.prisbox.one;
  * 
  *         每次移动，你可以取一个鸡蛋（如果你有完整的鸡蛋）并把它从任一楼层 X 扔下（满足 1 <= X <= N）。
  * 
- *         你的目标是确切地知道 F 的值是多少。
+ *         你的目标是确切地知道 F 的值是多少。 ,.9o8
  * 
  *         无论 F 的初始值如何，你确定 F 的值的最小移动次数是多少？
  * 
@@ -29,8 +29,15 @@ package com.prisbox.one;
  *         输入：K = 3, N = 14 输出：4
  */
 public class SuperEggDrop887 {
-	public int superEggDrop(int K, int N) {
-
+	public static int superEggDrop(int K, int N) {
+		int[] count = new int[K + 1];
+		int step = 0;
+		for (; count[K] < N; step++) {
+			for (int i = K; i > 0; i--) {
+				count[i] += (count[i - 1] + 1);
+			}
+		}
+		return step;
 	}
 
 	/**
@@ -38,7 +45,8 @@ public class SuperEggDrop887 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		System.out.println(SuperEggDrop887.superEggDrop(2, 6) == 3);
+		System.out.println(SuperEggDrop887.superEggDrop(9, 10000));
 	}
 
 }
