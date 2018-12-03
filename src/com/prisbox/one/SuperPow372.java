@@ -15,6 +15,9 @@ package com.prisbox.one;
  *         输入: a = 2, b = [1,0] 输出: 1024
  */
 public class SuperPow372 {
+	public int superPow(int a, int[] b) {
+		int t = (int) (Math.log(1337)/Math.log(a))+1;
+	}
 
 	/**
 	 * @param args
