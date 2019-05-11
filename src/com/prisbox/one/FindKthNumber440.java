@@ -4,7 +4,6 @@
 
 package com.prisbox.one;
 
-
 /**
  * @author LO
  *
@@ -39,13 +38,13 @@ public class FindKthNumber440 {
     }
 
     private static int help(int start, int index, int length) {
-        if(index <= 1){
+        if (index <= 1) {
             return start;
         }
         int div = (length - 1) / 10;
         StringBuffer sb = new StringBuffer();
-        while(length > 0){
-            if(index <= 1){
+        while (length > 0) {
+            if (index <= 1) {
                 break;
             }
             div = (div - 1) / 10;
@@ -62,7 +61,6 @@ public class FindKthNumber440 {
      * @param args
      */
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
         System.out.println(findKthNumber(100, 10));
     }
 

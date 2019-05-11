@@ -43,7 +43,6 @@ public class NthDigit {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		NthDigit n = new NthDigit();
 		int t = n.findNthDigit(1000);
 		System.out.println(t);

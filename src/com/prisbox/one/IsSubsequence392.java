@@ -28,7 +28,7 @@ package com.prisbox.one;
  */
 public class IsSubsequence392 {
 	public boolean isSubsequence(String s, String t) {
-		if("".equals(s)) {
+		if ("".equals(s)) {
 			return true;
 		}
 		int i = 0;
@@ -51,7 +51,6 @@ public class IsSubsequence392 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 	}
 

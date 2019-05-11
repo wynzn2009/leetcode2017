@@ -40,7 +40,6 @@ public class ReverseVowelsOfAString {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		ReverseVowelsOfAString r= new ReverseVowelsOfAString();
 		String leetcode = "leetcode";
 		System.out.println(r.reverseVowels(leetcode));

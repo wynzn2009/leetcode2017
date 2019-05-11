@@ -13,25 +13,25 @@ import com.prisbox.base.TreeNode;
  */
 public class FindBottomLeftTreeValue {
 	public int findBottomLeftValue(TreeNode root) {
-        LinkedList<TreeNode> list = new LinkedList<TreeNode>();
-        list.offerLast(root);
-        TreeNode node = null;
-        while(!list.isEmpty()){
-        	node = list.pollFirst();
-        	if(node.right!=null){
-        		list.offerLast(node.right);
-        	}
-        	if(node.left!=null){
-        		list.offerLast(node.left);
-        	}
-        }
-        return node.val;
-    }
+		LinkedList<TreeNode> list = new LinkedList<TreeNode>();
+		list.offerLast(root);
+		TreeNode node = null;
+		while (!list.isEmpty()) {
+			node = list.pollFirst();
+			if (node.right != null) {
+				list.offerLast(node.right);
+			}
+			if (node.left != null) {
+				list.offerLast(node.left);
+			}
+		}
+		return node.val;
+	}
+
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 	}
 

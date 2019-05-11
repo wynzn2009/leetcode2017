@@ -18,15 +18,14 @@ public class JumpGameII {
 			}
 		}
 		return jumps;
-    }
-	
+	}
+
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		JumpGameII j = new JumpGameII();
-		int[] t = {2,3,1,1,4};
+		int[] t = { 2, 3, 1, 1, 4 };
 		j.jump(t);
 	}
 

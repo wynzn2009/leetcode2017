@@ -44,7 +44,6 @@ public class SuperEggDrop887 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		System.out.println(SuperEggDrop887.superEggDrop(2, 6) == 3);
 		System.out.println(SuperEggDrop887.superEggDrop(9, 10000));
 	}

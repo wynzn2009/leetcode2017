@@ -63,7 +63,6 @@ public class SuperPow372 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		SuperPow372 s = new SuperPow372();
 		int[] n = { 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 		int re = s.superPow(2, n);

@@ -11,23 +11,23 @@ import java.util.HashSet;
  */
 public class IsHappy202 {
 	public static boolean isHappy(int n) {
-		if(n==1){
+		if (n == 1) {
 			return true;
 		}
 		HashSet<Integer> set = new HashSet<>();
 		int sum = 0;
 		int t = 0;
-		while(true){
-			while(n>0){
-				t = n%10;
-				sum += t*t;
+		while (true) {
+			while (n > 0) {
+				t = n % 10;
+				sum += t * t;
 				n /= 10;
 			}
-			if(sum==1||sum==7){
+			if (sum == 1 || sum == 7) {
 				return true;
-			}else if(set.contains(sum)){
+			} else if (set.contains(sum)) {
 				return false;
-			}else{
+			} else {
 				set.add(sum);
 				n = sum;
 				sum = 0;
@@ -39,7 +39,6 @@ public class IsHappy202 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		System.out.println(isHappy(2));
 	}
 

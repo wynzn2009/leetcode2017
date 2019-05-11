@@ -52,7 +52,6 @@ public class GetHint299 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		GetHint299 g = new GetHint299();
 		g.getHint("1807", "7810");
 	}

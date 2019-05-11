@@ -36,7 +36,6 @@ public class ReverseWords3 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		String a = "Let's take LeetCode contest";
 		System.out.println(reverseWords(a));
 	}

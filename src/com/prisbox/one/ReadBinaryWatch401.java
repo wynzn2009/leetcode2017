@@ -46,7 +46,6 @@ public class ReadBinaryWatch401 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		ReadBinaryWatch401 r = new ReadBinaryWatch401();
 		r.readBinaryWatch(1);
 	}

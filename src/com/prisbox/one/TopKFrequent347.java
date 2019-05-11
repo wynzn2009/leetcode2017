@@ -45,7 +45,6 @@ public class TopKFrequent347 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int[] a = { 1, 1, 1, 2, 2, 3 };
 		topKFrequent(a, 2);
 	}

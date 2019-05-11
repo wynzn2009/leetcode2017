@@ -35,8 +35,7 @@ public class ArrayNesting565 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int[] a = {5,4,0,3,1,6,2};
+		int[] a = { 5, 4, 0, 3, 1, 6, 2 };
 		arrayNesting(a);
 		System.out.println(12412);
 	}

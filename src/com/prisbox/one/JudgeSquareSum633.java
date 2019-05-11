@@ -42,7 +42,6 @@ public class JudgeSquareSum633 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		judgeSquareSum(2147482647);
 	}
 }
