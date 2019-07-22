@@ -3,15 +3,14 @@
  */
 package com.prisbox.one;
 
-
 /**
- * @author LO
- * TODO 221
+ * @author LO TODO 221
  */
 public class MaximalSquare221 {
     public int maximalSquare(char[][] matrix) {
-        
+
     }
+
     /**
      * @param args
      */
