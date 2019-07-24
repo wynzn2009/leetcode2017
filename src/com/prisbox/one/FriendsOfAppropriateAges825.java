@@ -43,8 +43,12 @@ public class FriendsOfAppropriateAges825 {
 			if (ages[a] <= 14) {
 				break;
 			}
-			if (ages[a] == ages[b]) {
+			if(a==b) {
+				b--;
+			}else if (ages[a] == ages[b]) {
 				count++;
+				
+				b--;
 			} else if (!help(ages[a], ages[b])) {
 				count += a - b -1;
 				a--;
