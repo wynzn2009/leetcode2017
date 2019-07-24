@@ -39,7 +39,7 @@ public class FriendsOfAppropriateAges825 {
 		Arrays.sort(ages);
 		int a = ages.length - 1;
 		int b = ages.length - 2;
-		while (a > 0 && b > 0) {
+		while (a >= 0 && b >= 0) {
 			if (ages[a] <= 14) {
 				break;
 			}
@@ -56,6 +56,7 @@ public class FriendsOfAppropriateAges825 {
 				b--;
 			}
 		}
+		count += a - b -1;
 		return count;
 	}
 
@@ -68,7 +69,7 @@ public class FriendsOfAppropriateAges825 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] ages = { 20, 30, 100, 110, 120 };
+		int[] ages = { 16,16};
 		System.out.print(FriendsOfAppropriateAges825.numFriendRequests(ages));
 	}
 
