@@ -4,6 +4,8 @@
 package com.prisbox.one;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author 015422404 人们会互相发送好友请求，现在给定一个包含有他们年龄的数组，ages[i] 表示第 i 个人的年龄。
@@ -35,42 +37,30 @@ import java.util.Arrays;
  */
 public class FriendsOfAppropriateAges825 {
 	public static int numFriendRequests(int[] ages) {
-		int count = 0;
-		Arrays.sort(ages);
-		int a = ages.length - 1;
-		int b = ages.length - 2;
-		while (a >= 0 && b >= 0) {
-			if (ages[a] <= 14) {
-				break;
-			}
-			if(a==b) {
-				b--;
-			}else if (ages[a] == ages[b]) {
-				count++;
-				
-				b--;
-			} else if (!help(ages[a], ages[b])) {
-				count += a - b -1;
-				a--;
-			}else {
-				b--;
-			}
-		}
-		count += a - b -1;
-		return count;
-	}
+		int result = 0;
+		int[] nums = new int[121];
+		for (int age : ages) {
+			nums[age]++;
 
-	private static boolean help(int a, int b) {
-		return !(b > a || b <= (a / 2) + 7);
+		}
+		int[] sums = new int[121];
+		for (int i = 1; i <= 120; i++) {
+			sums[i] = sums[i - 1] + nums[i];
+
+		}
+		for (int i = 15; i <= 120; i++) {
+			if (nums[i] == 0)
+				continue;
+			int cnt = sums[i] - sums[i / 2 + 7];
+			result += cnt * nums[i] - nums[i];
+		}
+		return result;
 	}
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int[] ages = { 16,16};
-		System.out.print(FriendsOfAppropriateAges825.numFriendRequests(ages));
 	}
 
 }
