@@ -39,14 +39,14 @@ public class FriendsOfAppropriateAges825 {
 		Arrays.sort(ages);
 		int a = ages.length - 1;
 		int b = ages.length - 2;
-		while (a != 0 & b != 0) {
+		while (a > 0 && b > 0) {
 			if (ages[a] <= 14) {
 				break;
 			}
 			if (ages[a] == ages[b]) {
 				count++;
 			} else if (!help(ages[a], ages[b])) {
-				count += a - b + 1;
+				count += a - b -1;
 				a--;
 			}else {
 				b--;
