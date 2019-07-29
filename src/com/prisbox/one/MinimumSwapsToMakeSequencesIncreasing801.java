@@ -21,7 +21,29 @@ package com.prisbox.one;
  */
 public class MinimumSwapsToMakeSequencesIncreasing801 {
 	public int minSwap(int[] A, int[] B) {
-
+		int a[] = new int[A.length + 1];
+		int b[] = new int[A.length + 1];
+		a[0] = 0;
+		b[0] = 1;
+		for (int i = 1; i < A.length; i++) {
+			int min = Integer.MAX_VALUE;
+			if (A[i] > A[i - 1] && B[i] > B[i - 1]) {
+				min = a[i - 1];
+			}
+			if (A[i] > B[i - 1] && B[i] > A[i - 1]) {
+				min = Math.min(min, b[i - 1]);
+			}
+			a[i] = min;
+			min = Integer.MAX_VALUE;
+			if (A[i] > B[i - 1] && B[i] > A[i - 1]) {
+				min = a[i - 1] + 1;
+			}
+			if (A[i] > A[i - 1] && B[i] > B[i - 1]) {
+				min = Math.min(min, b[i - 1] + 1);
+			}
+			b[i] = min;
+		}
+		return Math.min(a[A.length - 1], b[A.length - 1]);
 	}
 
 	/**
