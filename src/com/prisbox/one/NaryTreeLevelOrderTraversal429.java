@@ -51,6 +51,7 @@ public class NaryTreeLevelOrderTraversal429 {
 			re.add(l);
 			list = list1;
 			
+			
 		}
 
 		return re;
