@@ -4,3 +4,8 @@
 /.settings
 .vscode/launch.json
 .vscode/settings.json
+*.class
+.idea/vcs.xml
+leetcode2017.iml
+.idea/misc.xml
+.idea/modules.xml

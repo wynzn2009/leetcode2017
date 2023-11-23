@@ -35,9 +35,10 @@ public class ConstructStringfromBinaryTree606 {
 		}
 		StringBuffer sb = new StringBuffer();
 		sb.append(t.val);
-		if() {
-			
-		}
+		/*if() {
+
+		}*/
+		return null;
 	}
 
 	private void help(TreeNode t, StringBuffer sb) {

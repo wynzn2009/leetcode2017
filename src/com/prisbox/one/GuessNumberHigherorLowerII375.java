@@ -27,7 +27,7 @@ package com.prisbox.one;
  */
 public class GuessNumberHigherorLowerII375 {
 	public int getMoneyAmount(int n) {
-
+		return 0;
 	}
 
 	/**

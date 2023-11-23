@@ -31,10 +31,11 @@ package com.prisbox.one;
 public class ScoreAfterFlippingMatrix861 {
 	public int matrixScore(int[][] A) {
 		for(int i=0;i<A.length;i++) {
-			if() {
+			/*if() {
 				
-			}
+			}*/
 		}
+		return 0;
 	}
 
 	private void rever(int[] a) {
